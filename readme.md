@@ -1,8 +1,8 @@
 # LIMETTE - Local Interpretable Model Explanation with Trust and Transparency Enhancements for Defensive Protection Against Adversarial Attacks
 
-Code for our paper, "[Unfooling Perturbation-Based Post Hoc Explainers](https://arxiv.org/abs/2205.14772)." Here, we 
+Code for our paper, "LIMETTE - Local Interpretable Model Explanation with Trust and Transparency Enhancements for Defensive Protection Against Adversarial Attacks". Here, we 
 provide an extended defensive mechanism against scaffolding-based adversarial attacks on
-perturbation-based explainers. We propose a novel dynamic trustable treshold, ensembler extensions and ARIMA extensions.
+perturbation-based explainers. We propose a novel dynamic trustable treshold, ensembler attacking and ARIMA extensions.
 
 **Abstract**:
 
