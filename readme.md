@@ -1,30 +1,45 @@
-# LIMETTE: Local Interpretable Model Explanation with Transparency and Trust Enhancements
+# LIMETTE - Local Interpretable Model Explanation with Trust and Transparency Enhancements for Defensive Protection Against Adversarial Attacks
 
-LIMETTE is a framework designed to provide interpretable and trustworthy explanations for machine learning models. It extends the Local Interpretable Model-agnostic Explanations (LIME) approach by incorporating mechanisms for attacking and defending model explanations, ensuring transparency and robustness.
+Code for our paper, "[Unfooling Perturbation-Based Post Hoc Explainers](https://arxiv.org/abs/2205.14772)." Here, we 
+provide an extended defensive mechanism against scaffolding-based adversarial attacks on
+perturbation-based explainers. We propose a novel dynamic trustable treshold, ensembler extensions and ARIMA extensions.
 
-## Table of Contents
+**Abstract**:
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Example Workflow](#example-workflow)
-- [Schema](#schema)
-- [Attack and Defense Mechanisms](#attack-and-defense-mechanisms)
-- [Contributing](#contributing)
-- [License](#license)
+> In the realm of machine learning developments, the deployment of black box models in sensitive domains demands robust, trustworthy, and auditable explanation techniques capable of combating adversarial attacks. Recent critiques have highlighted potential vulnerabilities in perturbation-based post hoc explanation methods like LIME and SHAP, revealing that these methods can be manipulated to produce deceptive explanations, potentially thwarting audits. In this thesis, we introduce LIMETTE (Local Interpretable Model Explanation with Trust and Transparency Enhancements), a novel defensive algorithm for LIME and SHAP designed to guard against adversarial manipulation attacks. LIMETTE incorporates robustness checks and adversarial detection mechanisms, ensuring the reliability and transparency of explanations. Our approach prevents adversaries from redirecting explanations to unrelated portions of the input, thus uncovering false trails. LIMETTE integrates several advanced mechanisms: threshold dynamics to adjust explanation sensitivity, dynamic ARIMA models for time series anomaly detection, and ensemble methods to learn form a wide range of existing attacks, enhancing robustness. Additionally, we introduce a trust score metric that quantifies the reliability of generated explanations, enabling auditors to assess the likelihood of adversarial interference. Through extensive experiments, including both synthetic and six real-world scenarios, we demonstrate that LIMETTE effectively resists a range of novel adversarial attacks, providing reliable and transparent insights into model behavior. Our findings reaffirm the utility of LIMETTE in fostering trust and accountability in vulnerable machine learning applications, particularly in high-stakes environments.
 
-## Features
-
-- **Interpretable Explanations**: LIMETTE generates local explanations that are easy to understand and interpret, even for non-experts.
-- **Transparency**: The framework emphasizes transparency in its operations, ensuring that users can trust the explanations provided.
-- **Attack and Defense Mechanisms**: LIMETTE includes modules for simulating attacks on the model and its explanations, as well as defenses to safeguard against these attacks.
-- **Flexible Integration**: Compatible with a wide range of machine learning models, making it suitable for various applications.
+**Note**: We adapt the "unfooling" portion of the code from [Unfooling-LIME-SHAP](https://github.com/craymichael/unfooling)
+in this repository.
 
 ## Installation
+All required packages are listed in `requirements.txt`. This can be installed
+in a virtual environment using tools, such as `virtualenv` or `conda`.
 
-To install LIMETTE, you can clone the repository and install the dependencies:
+Example of installation via `pip`:
 
-```bash
-git clone https://github.com/yourusername/LIMETTE.git
-cd LIMETTE
+```shell
 pip install -r requirements.txt
+```
+
+## Run Instructions
+The LIMETTE framework can be executed directly via the provided Python script run.py. Before running the script, ensure that all dependencies listed in requirements.txt are installed in your environment. You can install them using pip.
+
+
+
+## How to Cite This Work
+
+([link](https://arxiv.org/abs/2205.14772))
+Kiel A. "LIMETTE"
+Erasmus University Rotterdam, 2024.
+
+**BibTeX**:
+
+```text
+@inproceedings{LIMETTE2024,
+  title     = {LIMETTE - Local Interpretable Model Explanation with Trust and Transparency Enhancements for Defensive Protection Against Adversarial Attacks,
+  author    = (Kiel, Alexander},
+  year      = 2024,
+  booktitle = {},
+  publisher = {Erasmus University},
+}
+```
