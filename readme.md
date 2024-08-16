@@ -28,7 +28,7 @@ The LIMETTE framework can be executed directly via the provided Python script ru
 
 ## How to Cite This Work
 
-([link](https://arxiv.org/abs/2205.14772))
+([link](https://arxiv.org/))
 Kiel A. "LIMETTE"
 Erasmus University Rotterdam, 2024.
 
