@@ -2,11 +2,28 @@
 
 Code for our paper, "LIMETTE - Local Interpretable Model Explanation with Trust and Transparency Enhancements for Defensive Protection Against Adversarial Attacks". Here, we 
 provide an extended defensive mechanism against scaffolding-based adversarial attacks on
-perturbation-based explainers. We propose a novel dynamic trustable treshold, ensembler attacking and ARIMA extensions.
+perturbation-based explainers. 
 
 **Abstract**:
 
-> In the realm of machine learning developments, the deployment of black box models in sensitive domains demands robust, trustworthy, and auditable explanation techniques capable of combating adversarial attacks. Recent critiques have highlighted potential vulnerabilities in perturbation-based post hoc explanation methods like LIME and SHAP, revealing that these methods can be manipulated to produce deceptive explanations, potentially thwarting audits. In this thesis, we introduce LIMETTE (Local Interpretable Model Explanation with Trust and Transparency Enhancements), a novel defensive algorithm for LIME and SHAP designed to guard against adversarial manipulation attacks. LIMETTE incorporates robustness checks and adversarial detection mechanisms, ensuring the reliability and transparency of explanations. Our approach prevents adversaries from redirecting explanations to unrelated portions of the input, thus uncovering false trails. LIMETTE integrates several advanced mechanisms: threshold dynamics to adjust explanation sensitivity, dynamic ARIMA models for time series anomaly detection, and ensemble methods to learn form a wide range of existing attacks, enhancing robustness. Additionally, we introduce a trust score metric that quantifies the reliability of generated explanations, enabling auditors to assess the likelihood of adversarial interference. Through extensive experiments, including both synthetic and six real-world scenarios, we demonstrate that LIMETTE effectively resists a range of novel adversarial attacks, providing reliable and transparent insights into model behavior. Our findings reaffirm the utility of LIMETTE in fostering trust and accountability in vulnerable machine learning applications, particularly in high-stakes environments.
+In the realm of recent machine learning developments, the deployment of black box models in sensitive
+domains demands robust, trustworthy, and auditable explanation techniques capable of combating a wide
+range of adversarial attacks. Recent critiques have highlighted potential vulnerabilities in perturbation-based
+post hoc explanation methods such as LIME and SHAP, revealing that these methods can be manipulated to
+produce deceptive explanations, potentially thwarting audits. In this thesis, we introduce LIMETTE (Local
+Interpretable Model Explanation with Trust and Transparency Enhancements)1, a novel defensive algorithm
+demonstrating particular effectiveness when used in conjunction with LIME and designed to guard against
+adversarial manipulation attacks. LIMETTE incorporates extended robustness checks and adversarial detec-
+tion mechanisms, ensuring the reliability and transparency of explanations. Our approach prevents adversaries
+from redirecting explanations to unrelated portions of the input, thus uncovering false trails. This defensive
+framework integrates several advanced mechanisms: threshold dynamics to adjust explanation sensitivity, dy-
+namic ARIMA and GARCH structures to capture volatility clustering and temporal dependencies, a Lipschitz
+adjustment and an account for differential privacy. Hereby, we introduce a trust score metric that quantifies
+the reliability of generated explanations, enabling auditors to assess the likelihood of adversarial interference.
+Through extensive experiments involving six real-world scenarios, we demonstrate that LIMETTE effectively
+resists a range of novel adversarial attacks, providing reliable and transparent insights into model behavior.
+Our findings reaffirm the utility of LIMETTE in fostering trust and accountability in vulnerable machine
+learning applications, particularly in high-stake environments prone to profiling.
 
 **Note**: We adapt the "unfooling" portion of the code from [Unfooling-LIME-SHAP](https://github.com/craymichael/unfooling)
 in this repository.
