@@ -39,7 +39,9 @@ pip install -r requirements.txt
 ```
 
 ## Run Instructions
-The LIMETTE framework can be executed directly via the provided Python script run.py. Before running the script, ensure that all dependencies listed in requirements.txt are installed in your environment. You can install them using pip.
+The LIMETTE framework can be executed directly via the provided Python scripts:
+![image](https://github.com/user-attachments/assets/ca70a0e4-6956-4c65-81a8-151564adb56c)
+Before running the script, ensure that all dependencies listed in requirements.txt are installed in your environment. You can install them using pip.
 
 
 
